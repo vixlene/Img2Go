@@ -1,0 +1,44 @@
+<Window x:Class="Img2Go.Views.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Img2Go"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Width="400" Height="300"
+        ShowInTaskbar="False">
+    <Border Background="{DynamicResource WindowBackgroundBrush}"
+            CornerRadius="12"
+            BorderThickness="1"
+            BorderBrush="{DynamicResource BorderBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <StackPanel Grid.Row="0" 
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center">
+                <TextBlock Text="Img2Go" 
+                           FontSize="36"
+                           FontWeight="Bold"
+                           Foreground="{DynamicResource TextBrush}"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,10"/>
+                <TextBlock Text="Drop your images here" 
+                           FontSize="18"
+                           Foreground="{DynamicResource SecondaryTextBrush}"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+            
+            <ProgressBar Grid.Row="1"
+                         IsIndeterminate="True"
+                         Height="4"
+                         Margin="20,0,20,20"
+                         Foreground="{DynamicResource AccentBrush}"/>
+        </Grid>
+    </Border>
+</Window>
+

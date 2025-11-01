@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Img2Go</AssemblyName>
+    <RootNamespace>Img2Go</RootNamespace>
+    <Version>1.0.0</Version>
+    <Company>Img2Go</Company>
+    <Product>Img2Go</Product>
+    <Description>Fast, lightweight, privacy-friendly image converter for Windows</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240822000" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
+    <PackageReference Include="System.Windows.Forms" Version="8.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="Resources\**\*" />
+  </ItemGroup>
+
+</Project>
+
